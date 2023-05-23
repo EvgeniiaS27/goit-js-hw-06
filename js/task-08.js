@@ -8,7 +8,7 @@ function onSubmitForm(event) {
   const { email, password } = event.currentTarget.elements;
   let dataFile = {};
 
-  if (email.value.length && password.value.length === 0) {
+  if (email.value.length === 0 || password.value.length === 0) {
     return alert('Все поля должны быть заполнены!');
   }
   dataFile = {
