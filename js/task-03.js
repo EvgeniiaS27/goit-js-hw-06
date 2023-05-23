@@ -20,14 +20,10 @@ galleryRef.style.gap = '16px';
 galleryRef.style.justifyContent = 'pace-around';
 galleryRef.style.listStyle = 'none';
 
-console.log(galleryRef);
-
 const makeImages = ({ url, alt }) => {
   return `<li> <img src="${url}" alt="${alt}" width="250" height="150"> </li>`;
 };
 
 const makeGalleryImages = images.map(makeImages).join('');
-
-console.log(makeGalleryImages);
 
 galleryRef.insertAdjacentHTML('afterbegin', makeGalleryImages);

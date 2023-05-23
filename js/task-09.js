@@ -8,8 +8,6 @@ const buttonChangeColorRef = document.querySelector('.change-color');
 const textColorRef = document.querySelector('.color');
 const bodyDocumentRef = document.body;
 
-console.log(bodyDocumentRef);
-
 buttonChangeColorRef.addEventListener('click', onBtnChangeColorClick);
 
 function onBtnChangeColorClick(event) {

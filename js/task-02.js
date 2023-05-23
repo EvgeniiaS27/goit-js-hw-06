@@ -8,7 +8,6 @@ const ingredients = [
 ];
 
 const listIngredientsRef = document.querySelector('#ingredients');
-console.log(listIngredientsRef);
 
 const ingredientItem = ingredients.map(element => {
   const ingredientRef = document.createElement('li');
